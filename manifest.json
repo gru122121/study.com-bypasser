@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Study.com Content Unhider",
+  "version": "1.0",
+  "description": "Automatically reveals hidden content on Study.com pages",
+  "permissions": ["scripting"],
+  "host_permissions": ["*://*.study.com/*"],
+  "content_scripts": [{
+    "matches": ["*://*.study.com/*"],
+    "js": ["unhide.js"]
+  }]
+}
